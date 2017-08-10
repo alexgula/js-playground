@@ -1,0 +1,49 @@
+.contact-title {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list {
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    list-style: none;
+    margin: 12px 0;
+}
+
+.contact-name {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-email {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.contact-form-error {
+    border: solid red;
+}
+
+.contact-form-input {
+    display: block;
+    margin: 12px 0;
+    width: 200px;
+}
+
+.contact-form-textarea {
+    display: block;
+    margin: 12px 0;
+    width: 198px;
+}
+
+.contact-form-submit {
+    display: block;
+    width: 100px;
+    height: 32px;
+}
