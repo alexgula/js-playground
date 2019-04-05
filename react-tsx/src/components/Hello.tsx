@@ -1,11 +1,16 @@
-import * as React from "react";
+import './Hello.less';
 
-export interface HelloProps { compiler: string; framework: string; }
+import * as React from 'react';
 
-// 'HelloProps' describes the shape of props.
-// State is never set so we use the 'undefined' type.
-export class Hello extends React.Component<HelloProps, undefined> {
-    render() {
-        return <h1>Hello from {this.props.compiler} and {this.props.framework}!</h1>;
-    }
-}
+import { classNamePrefixer } from '../css';
+
+const css = classNamePrefixer('hello');
+
+export const Hello: React.StatelessComponent<{
+    compiler: string;
+    framework: string;
+    status: string;
+}> = props =>
+    <li className={css()}>
+        {props.framework} on {props.compiler} => {props.status}!
+    </li>;

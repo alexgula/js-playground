@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "strict": true,
+        "module": "es6",
+        "moduleResolution": "node",
+        "target": "es5",
+        "jsx": "preserve"
+    },
+    "files": [
+        "src/app.tsx"
+    ]
+}
